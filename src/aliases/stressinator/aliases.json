@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Stress Triggers",
+    "regex": "^stresstest(?: (\\d+))?$",
+    "script": "Stressinator.stressTest(tonumber(matches[2]))"
+  },
+  {
+    "name": "waitno",
+    "regex": "^waitno$",
+    "script": "if Stressinator.timerID then Stressinator.stop() end"
+  }
+]
